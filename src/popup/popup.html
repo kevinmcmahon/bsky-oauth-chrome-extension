@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Bluesky OAuth</title>
+        <style>
+            body {
+                width: 300px;
+                padding: 16px;
+                font-family: system-ui, -apple-system, sans-serif;
+            }
+            .profile {
+                display: none;
+                margin-top: 16px;
+            }
+            .profile.visible {
+                display: block;
+            }
+            .avatar {
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+            }
+            .error {
+                color: #dc2626;
+            }
+            .hidden {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Bluesky OAuth</h1>
+        <button id="login">Log in with Bluesky</button>
+        <button id="logout" class="hidden">Log out</button>
+        <p id="auth-status"></p>
+        <p id="error-message" class="error"></p>
+
+        <div id="profile" class="profile">
+            <img id="user-avatar" class="avatar" alt="Profile Pic" />
+            <h2 id="user-displayName">User Display Name</h2>
+            <p id="user-handle"></p>
+        </div>
+    </body>
+</html></html>
